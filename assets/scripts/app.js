@@ -74,8 +74,6 @@ function endRound() {
     );
   }
 
-  console.table(battleLog);
-
   if (currentMosterHealth <= 0 || currentPlayerHealth <= 0) {
     reset();
   }
@@ -152,7 +150,9 @@ function writeToLog(event, value, finalMonsterHealth, finalPlayerHealth) {
   battleLog.push(logEntry);
 }
 
-function printLogHandler() {}
+function printLogHandler() {
+  console.table(battleLog);
+}
 
 attackBtn.addEventListener("click", attackHandler);
 strongAttackBtn.addEventListener("click", strongAttackHandler);
