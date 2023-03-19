@@ -152,16 +152,6 @@ function writeToLog(event, value, finalMonsterHealth, finalPlayerHealth) {
       break;
   }
 
-  // if (event === LOG_EVENT_PLAYER_ATTACK) {
-  //   logEntry.target = "MOSTER";
-  // } else if (event === LOG_EVENT_STRONG_PLAYER_ATTACK) {
-  //   logEntry.target = "MOSTER";
-  // } else if (event === LOG_EVENT_PLAYER_HEAL) {
-  //   logEntry.target = "PLAYER";
-  // } else if (event === LOG_EVENT_MOSTER_ATTACK) {
-  //   logEntry.target = "PLAYER";
-  // }
-
   battleLog.push(logEntry);
 }
 
